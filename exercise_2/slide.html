@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show Slide!</title>
+</head>
+<style>
+        .title{
+          text-align: center;
+          overflow: hidden;
+        }
+        .title span{
+          position: relative;
+          display: inline-block;
+        }
+        .title span::before{
+          content: '';
+          position: absolute;
+          top: 50%;
+          width: 1000px;
+          height: 1px;
+          left: 100%;
+          background-color: #333;
+        }
+        .title span::after{
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 100%;
+          width: 1000px;
+          height: 1px;
+          background-color: #333;
+        }
+</style>
+<body>
+    <div class="title">
+    <script type="text/javascript">
+    var id = 10000;
+    function next(){
+        id = id + 1;
+        document.getElementById("image").src = id%5 + '.jpg'; 
+        // console.log(id);
+    }
+    function previous(){
+        id = id - 1
+        document.getElementById("image").src = id%5+ '.jpg'; 
+        // console.log(id);  
+    }
+    </script>
+    <p>Click the previoue and next to change the picture.</p><br>
+    <div id="m_dog">
+    <img src = "0.jpg" id="image" width="400" height="300"> <br>
+    </div> 
+    <button onclick="previous()">previous </button>
+    <button onclick="next()">next</button>
+    </div>
+</body>
+</html>
