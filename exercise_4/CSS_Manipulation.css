@@ -1,4 +1,15 @@
 p
 {
-    background-color: blue;
+    background-color: lightblue;
+    color: rgb(8, 8, 8);
+    font-family: Monospace
+}
+p:hover
+{
+    background-color: black;
+    color: red
+}
+body
+{
+    background-color: black;
 }
