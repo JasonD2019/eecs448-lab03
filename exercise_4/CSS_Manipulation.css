@@ -1,6 +1,9 @@
 p
 {
-    background-color: lightblue;
+    border: thick solid white;
+    border-width: 5px;
+    border-radius: 10px;
+    background-color:white;
     color: rgb(8, 8, 8);
     font-family: Monospace
 }
