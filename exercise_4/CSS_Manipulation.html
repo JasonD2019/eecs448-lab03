@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="CSS_Manipulation.css">
+    <link href="https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_4/CSS_Manipulation.css"
+            rel="stylesheet"
+            type="text/css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Manipulation</title>
 </head>
+<style>
+p
+{
+    border: thick solid powderblue;
+    border-width: 5px;
+    border-radius: 10px;
+    background-color:powderblue;
+    color: rgb(8, 8, 8);
+    font-family: Monospace
+}
+.GoTo{
+    border-radius: 12px;
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.Presenting{
+    border-radius: 12px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+body{
+    background-color: powderblue;
+}
+.normal{
+      font-family: Comic Sans MS;
+      background-color: #000000;
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14x;
+      margin: 6px 2px;
+      cursor: pointer;
+  }
+</style>
 <body>
+    <div style="width:100%;overflow:hidden;height:60px">
+            <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/index.html';">Main Page</button>
+            <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_1/password.html';">Exercise 1</button>
+            <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_2/slide.html';">Exercise 2</button>
+            <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_3/PersonalProfile.html';">Exercise 3</button>
+            <button class = "Presenting" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_4/CSS_Manipulation.html';">Exercise 4</button>
+    </div>
         <p id="m_p"> Create a web page that have a paragraph with some dummy text. Near the paragraph have text fields to accept the following values:<br>
         Border:<br> 
             red value<br> 
@@ -28,7 +90,7 @@
         <p>Red Value for Background: <input type="text" id="Red_Back" value=""></p>
         <p>Green Value for Background: <input type="text" id="Green_Back" value=""></p>
         <p>Blue Value for Background: <input type="text" id="Blue_Back" value=""></p>
-        <button  onclick="Change()">changes the border and background color</button>
+        <button class = "normal" onclick="Change()">changes the border and background color</button>
         <p id = border ></p>
         <p id = back ></p>
         <script>

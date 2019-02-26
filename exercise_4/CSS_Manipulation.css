@@ -1,9 +1,51 @@
 p
 {
-    border: thick solid white;
+    border: thick solid powderblue;
     border-width: 5px;
     border-radius: 10px;
-    background-color:white;
+    background-color:powderblue;
     color: rgb(8, 8, 8);
     font-family: Monospace
 }
+.GoTo{
+    border-radius: 12px;
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.Presenting{
+    border-radius: 12px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+body{
+    background-color: powderblue;
+}
+.normal{
+      font-family: Comic Sans MS;
+      background-color: #000000;
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14x;
+      margin: 6px 2px;
+      cursor: pointer;
+  }
