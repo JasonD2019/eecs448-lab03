@@ -6,47 +6,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <link href="https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_3/PersonalProfile.css"
+            rel="stylesheet"
+            type="text/css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PersonalProfile</title>
     
 </head>
-<style>
-        .title{
-          text-align: center;
-          overflow: hidden;
-        }
-        .title span{
-          position: relative;
-          display: inline-block;
-        }
-        .title span::before{
-          content: '';
-          position: absolute;
-          top: 50%;
-          width: 1000px;
-          height: 1px;
-          left: 100%;
-          background-color: #333;
-        }
-        .title span::after{
-          content: '';
-          position: absolute;
-          top: 50%;
-          right: 100%;
-          width: 1000px;
-          height: 1px;
-          background-color: #333;
-        }
-</style>
 <body>
-    <div class="title">
+    <div style="width:100%;overflow:hidden;height:60px">
+        <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/index.html';">Main Page</button>
+        <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_1/password.html';">Exercise 1</button>
+        <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_2/slide.html';">Exercise 2</button>
+        <button class = "Presenting" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_3/PersonalProfile.html';">Exercise 3</button>
+        <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_4/CSS_Manipulation.html';">Exercise 4</button>
+    </div>
+    <center>
     <img src = "1.jpg" id="image" width="500" height="535">
     <p>Twenty years ago, the NBA welcomed a high-flying young man who created a phenomenon known as “Vinsanity.” <br>
     Nearly 25,000 points later, at age 41, Vince Carter is the oldest player in the NBA and a member of the rebuilding Sacramento Kings. <br>
     He’s still in love with the game.</p>
+    <a href="https://www.youtube.com/">favorite web sites: Click here to go to Youtube for more videos</a><br><br>
     <iframe width="560" height="350" src="https://www.youtube.com/embed/FeCUMfraHcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
 </body>
 </html>
