@@ -7,54 +7,74 @@
     <title>Show Slide!</title>
 </head>
 <style>
-        .title{
-          text-align: center;
-          overflow: hidden;
-        }
-        .title span{
-          position: relative;
-          display: inline-block;
-        }
-        .title span::before{
-          content: '';
-          position: absolute;
-          top: 50%;
-          width: 1000px;
-          height: 1px;
-          left: 100%;
-          background-color: #333;
-        }
-        .title span::after{
-          content: '';
-          position: absolute;
-          top: 50%;
-          right: 100%;
-          width: 1000px;
-          height: 1px;
-          background-color: #333;
-        }
-</style>
+    .GoTo{
+      border-radius: 12px;
+      background-color: #555555;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  .Presenting{
+      border-radius: 12px;
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  .normal{
+      background-color: #000000;
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14x;
+      margin: 6px 2px;
+      cursor: pointer;
+  }
+      body {background-color: powderblue;}
+      p    {color: black;}
+  </style>
 <body>
-    <div class="title">
+    <div style="width:100%;overflow:hidden;height:60px">
+        <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/index.html';">Main Page</button>
+        <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_1/password.html';">Exercise 1</button>
+        <button class = "Presenting" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_2/slide.html';">Exercise 2</button>
+        <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_3/PersonalProfile.html';">Exercise 3</button>
+        <button class = "GoTo" onclick="window.location.href = 'https://people.eecs.ku.edu/~x398d159/EECS448/Lab03/exercise_4/CSS_Manipulation.html';">Exercise 4</button>
+    </div>
+  <center>
     <script type="text/javascript">
     var id = 10000;
     function next(){
         id = id + 1;
-        document.getElementById("image").src = id%5 + '.jpg'; 
+        document.getElementById("image").src = id%5 + '.JPG';
         // console.log(id);
     }
     function previous(){
         id = id - 1
-        document.getElementById("image").src = id%5+ '.jpg'; 
-        // console.log(id);  
+        document.getElementById("image").src = id%5+ '.JPG';
+        // console.log(id);
     }
     </script>
     <p>Click the previoue and next to change the picture.</p><br>
     <div id="m_dog">
-    <img src = "0.jpg" id="image" width="400" height="300"> <br>
-    </div> 
-    <button onclick="previous()">previous </button>
-    <button onclick="next()">next</button>
+    <img src = "0.JPG" id="image" width="800" height="600"> <br>
     </div>
+    <button class = "normal" onclick="previous()">previous</button>
+    <button class = "normal" onclick="next()">  next </button>
 </body>
 </html>
